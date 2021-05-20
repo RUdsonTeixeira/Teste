@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //formas de uso de String:
+        let nome = "Rudson"
+        let sobrenome = 'Teixeira'
+
+        let nomeCompleto = nome + sobrenome
+       
+        //console.log("O nome é: " + nomeCompleto)
+
+        let imgPerfil = "https://avatars.githubusercontent.com/u/69061324?v=4"
+        
+        let template = ` <h1>${nome}</h1>
+                         <h2>${sobrenome}</h2>
+                         <img src="${imgPerfil}"/>
+                         `
+        //document.write(template)
+
+       //forma de uso de Number
+       let numero = 10
+
+       //forma de uso Boolean
+       
+       let b = true //ou false
+        
+       //formas de uso Null e undefined
+
+       let a // Undefined variavel indefinida
+       let c = null // Null variavel sem valor definido
+
+       //forma de uso do vetor
+
+       let vetor = [1,20,50]
+       console.log(vetor)
+
+       //forma de uso do Objeto
+       let nome2 = "Rud"
+       let sobrenome2 = 'Teixeira'
+       let imgPerfil2 = "https://avatars.githubusercontent.com/u/69061324?v=4" 
+
+        let pessoa = {
+            nome :"Ruds",
+            sobrenome : "Teixeira",
+            imgPerfil : "https://avatars.githubusercontent.com/u/69061324?v=4",
+        }
+        console.log(pessoa)
+
+        let pessoa2 = {
+            nome : "Rudson",
+            sobrenome : "Teixeira",
+            imgPerfil :  "https://avatars.githubusercontent.com/u/69061324?v=4",
+
+        } 
+        let listaPessoas = [pessoa,pessoa2]
+
+        console.log(listaPessoas)
+
+        let carro = {
+            modelo : "Ford Ka Sedan",
+            ano : "2017",
+            marca:"Ford",
+            velocidade:0,
+            acelerar(){
+                this.velocidade+=20
+            }
+        }
+        
+        console.log(carro.marca)
+
+    </script>
+</body>
+
+</html>
