@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Formulario de Cadastro</h1>
+        <form action="dados.html" method="GET">
+            <div>
+                <label class="form-label" for="">Nome:</label>
+                <input type="text" placeholder="Nome Completo" name="nome" class="form-control"> 
+            </div>
+            <div>
+                <label class="form-label" for="">Comentario:</label>
+                <textarea name="comentario" placeholder="Deixe seu comentario" class="form-control"></textarea>
+            </div>
+            <div>
+                <label class="form-label">Escolaridade</label>
+                <select name="escolaridade" id="">
+                    <option value="1">Ensino Fundamental Incompleto</option>
+                    <option value="2">Ensino Fundamental completo</option>
+                    <option value="3">Ensino Medio Incompleto</option>
+                    <option value="4">Ensino Medio completo</option>
+                    <option value="5">Ensino Superior Incompleto</option>
+                    <option value="6">Ensino Superior completo</option>
+                    <option value="-1" selected>-</option>
+                </select>
+            </div>
+            <div>
+                <label for="">CPF</label>
+                <input type="number" name="cpf" class="form-control" >
+            </div>
+            <div>
+                <label for="" class="form-label">Data de Nascimento</label>
+                <input type="date" name="dataNascimento" class="form-control">
+            </di/v> 
+            <div class="m-2"> 
+                <button class="btn btn-primary">Enviar</button>
+            </div>
+            
+        </form>
+
+    </section>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
